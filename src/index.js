@@ -3,11 +3,8 @@ import JsonView from './JsonView.vue'
 import ArrayView from './ArrayView.vue'
 import draggable from 'vuedraggable'
 import PackageFile from '../package.json'
-import Vue from 'vue';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
-
-Vue.use(ElementUI);
 const VERSION = PackageFile.version
 
 const install = (Vue) => {
@@ -17,6 +14,7 @@ const install = (Vue) => {
   Vue.component('JsonEditor', JsonEditor)
   Vue.component('json-view', JsonView)
   Vue.component('array-view', ArrayView)
+  Vue.use(ElementUI);
 
 }
 
