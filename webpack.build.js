@@ -17,7 +17,7 @@ config.output = {
   libraryTarget: 'umd',
 };
 config.externals = {
-  vue: 'Vue',
+  vue: 'vue',
 };
 
 module.exports = config
