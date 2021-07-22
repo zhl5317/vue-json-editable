@@ -7,14 +7,13 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 const VERSION = PackageFile.version
 
-const install = (Vue) => {
+const install = (v) => {
   if (install.installed) return
-
-  Vue.component('draggable', draggable)
-  Vue.component('JsonEditor', JsonEditor)
-  Vue.component('json-view', JsonView)
-  Vue.component('array-view', ArrayView)
-  Vue.use(ElementUI);
+  v.component('draggable', draggable)
+  v.component('JsonEditor', JsonEditor)
+  v.component('json-view', JsonView)
+  v.component('array-view', ArrayView)
+  v.use(ElementUI);
 
 }
 
