@@ -123,7 +123,7 @@ export default {
     },
     delItem: function(parentDom, item, index) {
       let vm = this
-      MessageBox.confirm("确定删除吗,是否继续吗", '提示', {
+      MessageBox.confirm("确定删除该条数据吗?", '提示', {
         confirmButtonText: '确定',
         cancelButtonText: '取消',
         type: 'warning'

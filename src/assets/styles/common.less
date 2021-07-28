@@ -122,9 +122,24 @@
             color: #999;
         }
 
-        .key-input,
+        .key-input {
+            width: 30%;
+            min-width: 130px;
+            border: none;
+            padding: 0 5px;
+            font-weight: bold;
+            font-size: 14px;
+            background: rgba(0,0,0,0);
+
+            &:focus {
+                background: #ffffa0;
+                border: none;
+                outline: 0;
+            }
+        }
         .val-input {
-            width: 140px;
+            width: 45%;
+            min-width: 140px;
             border: none;
             padding: 0 5px;
             font-weight: bold;
